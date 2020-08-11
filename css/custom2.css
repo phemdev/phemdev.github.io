@@ -1,0 +1,1020 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+.c-btn, .spr-button {
+    display: inline-block;
+    border: 0px solid #000000;
+    background: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    min-height: 50px;
+    color: #FFFFFF;
+    -webkit-transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0;
+    position: relative;
+    text-align: center;
+}
+
+    .c-btn.-fullwidth, .spr-button.-fullwidth {
+        width: 100%;
+    }
+
+    .c-btn::before, .spr-button::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        content: "";
+        -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        -webkit-transform: scale(0, 1);
+        -ms-transform: scale(0, 1);
+        transform: scale(0, 1);
+        -webkit-transform-origin: right center;
+        -ms-transform-origin: right center;
+        transform-origin: right center;
+        background: #482683;
+    }
+
+    .c-btn:hover::before, a:hover .c-btn::before, .spr-button:hover::before, a:hover .spr-button::before {
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        transform: scale(1, 1);
+        -webkit-transform-origin: left center;
+        -ms-transform-origin: left center;
+        transform-origin: left center;
+    }
+
+    
+
+    .c-btn:hover, a:hover .c-btn, .spr-button:hover, a:hover .spr-button {
+        color: #ffffff;
+    }
+
+@media (min-width: 1024px) {
+    .c-btn, .spr-button {
+        font-size: 0.625rem;
+    }
+}
+
+@media (min-width: 1024px) and (min-width: 1024px) {
+    .c-btn, .spr-button {
+        padding: 1.125rem 1.75rem;
+    }
+}
+
+@media (max-width: 1023px) {
+    .c-btn, .spr-button {
+        font-size: 10px;
+        padding: 18px 28px;
+    }
+}
+
+.c-btn.-yellow, .spr-button.-yellow {
+    background: #f3f569;
+    border: none;
+}
+
+/* PBH 8/2/2020 NEW STYLE EDITS */
+/* line 1, stylesheets/components/_buttons.scss */
+.ubiquebutton {
+    align-items: center;
+    border-radius: 0;
+    border: thin solid black;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.05em;
+    transition: 0.2s;
+    text-transform: uppercase;
+}
+
+@media not all and (hover: none) {
+    /* line 79, stylesheets/_mixins.scss */
+    .ubiquebutton:hover {
+        background: #f1f2f0;
+    }
+}
+/* line 15, stylesheets/components/_buttons.scss */
+.ubiquebutton.x-small {
+    font-size: 0.875rem;
+    min-height: 36px;
+    padding: 0.6875rem 0.89375rem;
+}
+/* line 19, stylesheets/components/_buttons.scss */
+.ubiquebutton.small {
+    font-size: 1rem;
+    min-height: 42px;
+    padding: 0.8125rem 1.05625rem;
+}
+/* line 23, stylesheets/components/_buttons.scss */
+.ubiquebutton.medium {
+    font-size: 1.125rem;
+    min-height: 48px;
+    padding: 0.9375rem 1.21875rem;
+}
+/* line 27, stylesheets/components/_buttons.scss */
+.ubiquebutton.large {
+    font-size: 1.25rem;
+    min-height: 54px;
+    padding: 1.0625rem 1.38125rem;
+}
+/* line 31, stylesheets/components/_buttons.scss */
+.ubiquebutton.x-large {
+    font-size: 1.375rem;
+    min-height: 60px;
+    padding: 1.1875rem 1.54375rem;
+}
+/* line 35, stylesheets/components/_buttons.scss */
+.ubiquebutton.green, .button.dark {
+    background: #193030;
+    color: white;
+}
+
+@media not all and (hover: none) {
+    /* line 79, stylesheets/_mixins.scss */
+    .ubiquebutton.green:hover, .ubiquebutton.dark:hover {
+        background: #778f90;
+    }
+}
+/* line 46, stylesheets/components/_buttons.scss */
+.arrow-ubiquebutton {
+    align-items: center;
+    background: white;
+    display: flex;
+    justify-content: top;
+    padding: 0;
+}
+
+/* line 53, stylesheets/components/_buttons.scss */
+    .arrow-ubiquebutton svg {
+        width: 40%;
+    }
+
+.cta {
+    align-items: stretch;
+    background: white;
+    border: thin solid black;
+    color: #193030;
+    display: flex;
+    height: 2.625rem;
+    font-size: 0.875rem;
+}
+
+@media (min-width: 64rem) {
+    /* line 77, stylesheets/components/_general.scss */
+    .cta {
+        height: 3.75rem;
+    }
+}
+
+@media not all and (hover: none) {
+    /* line 92, stylesheets/components/_general.scss */
+    .cta.preorder-cta:hover .cta-left,
+    .cta.preorder-cta:hover .arrow-ubiquebutton {
+        background: #f1f2f0;
+    }
+}
+
+@media (min-width: 64rem) {
+    /* line 98, stylesheets/components/_general.scss */
+    .cta.preorder-cta span:first-child {
+        display: none;
+    }
+}
+/* line 104, stylesheets/components/_general.scss */
+.cta.preorder-cta span:last-child {
+    display: none;
+}
+
+@media (min-width: 64rem) {
+    /* line 104, stylesheets/components/_general.scss */
+    .cta.preorder-cta span:last-child {
+        display: block;
+    }
+}
+/* line 113, stylesheets/components/_general.scss */
+.cta .cta-left {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    padding: 0 1.25rem;
+    transition: 0.1s;
+}
+
+@media (min-width: 64rem) {
+    /* line 113, stylesheets/components/_general.scss */
+    .cta .cta-left {
+        padding: 0 2rem;
+    }
+}
+/* line 126, stylesheets/components/_general.scss */
+.cta .cta-text {
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+/* line 132, stylesheets/components/_general.scss */
+.cta .arrow-ubiquebutton {
+    border: none;
+    border-left: thin solid black;
+    height: 100%;
+    min-width: 3rem;
+    width: 3rem;
+}
+
+@media (min-width: 64rem) {
+    /* line 132, stylesheets/components/_general.scss */
+    .cta .arrow-ubiquebutton {
+        min-width: 4.6875rem;
+        width: 4.6875rem;
+    }
+}
+
+.arrow-ubiquebutton-svg-style {
+    fill: none;
+    stroke: #1a2f30;
+    stroke-width: 4.5px;
+}
+.align-center {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+/* line 48, stylesheets/_utility.scss */
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.max-width {
+    max-width: 80.0625rem;
+}
+
+/* FONT SIZES*/
+@media (min-width: 37.5rem) {
+    /* line 17, stylesheets/sections/_header.scss */
+    header h1 {
+        font-size: 3.75rem;
+    }
+}
+
+@media (min-width: 37.5rem) {
+    /* line 26, stylesheets/sections/_header.scss */
+    header h1.medium {
+        font-size: 10vw;
+    }
+}
+
+@media (min-width: 45rem) {
+    /* line 26, stylesheets/sections/_header.scss */
+    header h1.medium {
+        font-size: 4.5rem;
+    }
+}
+
+@media (min-width: 37.5rem) {
+    /* line 36, stylesheets/sections/_header.scss */
+    header h1.large {
+        font-size: 10vw;
+    }
+}
+
+@media (min-width: 56.25rem) {
+    /* line 36, stylesheets/sections/_header.scss */
+    header h1.large {
+        font-size: 5.625rem;
+    }
+}
+
+@media (min-width: 93.75rem) {
+    /* line 36, stylesheets/sections/_header.scss */
+    header h1.large {
+        font-size: 6.25rem;
+    }
+}
+/* line 51, stylesheets/sections/_header.scss */
+header .subtext {
+    font-size: 5vw;
+    font-weight: 500;
+    line-height: 1.4em;
+    margin-top: 1em;
+}
+
+@media (min-width: 30rem) {
+    /* line 51, stylesheets/sections/_header.scss */
+    header .subtext {
+        font-size: 1.5rem;
+    }
+}
+/* line 61, stylesheets/sections/_header.scss */
+header .subtext.small {
+    font-size: 4.375vw;
+}
+
+@media (min-width: 25.6875rem) {
+    /* line 61, stylesheets/sections/_header.scss */
+    header .subtext.small {
+        font-size: 1.125rem;
+    }
+}
+
+@media (min-width: 30rem) {
+    /* line 61, stylesheets/sections/_header.scss */
+    header .subtext.small {
+        font-size: 1.125rem;
+    }
+}
+
+/* PBH 8/2/2020 CONTENT SECTION SETTINGS */
+.cluster {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+    /* line 54, stylesheets/components/_general.scss */
+    .cluster > h1,
+    .cluster > h2,
+    .cluster > h3,
+    .cluster > h4,
+    .cluster > h5,
+    .cluster > h6 {
+        margin-bottom: 0.5em;
+    }
+
+.body-text {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1em;
+}
+
+@media (min-width: 23.4375rem) {
+    /* line 70, stylesheets/_type.scss */
+    .body-text {
+        font-size: 4.8vw;
+    }
+}
+
+@media (min-width: 26.0625rem) {
+    /* line 70, stylesheets/_type.scss */
+    .body-text {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 64rem) {
+    /* line 70, stylesheets/_type.scss */
+    .body-text {
+        line-height: 1.7em;
+    }
+}
+/* line 87, stylesheets/_type.scss */
+.body-text + .body-text {
+    margin-top: 0.75em;
+}
+/* line 91, stylesheets/_type.scss */
+.body-text.white {
+    color: white;
+}
+
+/* BRAND COLORS */
+:root {
+    font-size: 100%;
+    --primary-1: hsla(262, 55%, 33%, 100%);
+    --primary-2: hsla(262, 44%, 44%, 95%);
+    --primary-3: hsla(262, 33%, 55%, 90%);
+    --primary-4: hsla(262, 25%, 70%, 80%);
+    --workforce-1: hsla(125, 50%, 25%, 100%);
+    --workforce-2: hsla(125, 60%, 40%, 95%);
+    --workforce-3: hsla(125, 70%, 60%, 90%);
+    --workforce-4: hsla(125, 60%, 80%, 80%);
+    --tech-3: hsla(55, 75%, 60%, 90%);
+    --insight-1: hsla(220, 100%, 15%, 1);
+    --dark-1: hsla(0, 0%, 7%, 100%);
+    --dark-2: hsla(0, 0%, 20%, 100%);
+    --dark-3: hsla(0, 0%, 46%, 100%);
+    --dark-4: hsla(0, 0%, 60%, 100%);
+    --light-1: hsl(255, 100%, 100%);
+    --light-2: hsl(255, 80%, 100%);
+    --light-3: hsl(255, 60%, 100%);
+    --light-4: hsl(255, 40%, 100%);
+}
+
+.dark-4 {
+    color: var(--dark-4);
+}
+
+.dark-1 {
+    color: var(--dark-1);
+}
+
+.primary-3 {
+    color: var(--primary-3);
+}
+
+.primary-4 {
+    color: var(--primary-4);
+}
+
+.primary-1 {
+    color: var(--primary-1);
+}
+
+.workforce-1 {
+    color: var(--workforce-1);
+}
+
+.workforce-2 {
+    color: var(--workforce-2);
+}
+
+.tech-3 {
+    color: var(--tech-3);
+}
+
+.insight-1 {
+    color: var(--insight-1);
+}
+
+.light-4 {
+    color: var(--light-4);
+}
+
+.ubqique-bg-color { background-color: #482683 !important; }
+
+/* PBH 8/2/2020 The ::selection selector matches the portion of an element that is selected by a user.
+Only a few CSS properties can be applied to the ::selection selector: color, background, cursor, and outline.*/
+::-moz-selection { /* Code for Firefox */
+    color: #FFF;
+    background: #482683;
+}
+
+::selection {
+    color: #FFF;
+    background: #482683;
+}
+
+.highlightme {
+    color: #FFF;
+    background: #482683;
+}
+
+.redhighlightme {
+    color: #FFFFFF;
+    background: red;
+}
+
+/* PBH 8/2/2020 SLICK SLIDER */
+#form-function-fresh .tabs {
+    border-bottom: thin solid black;
+    display: flex;
+    height: 3rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 64rem) {
+    /* line 2, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .tabs {
+        height: 3.75rem;
+    }
+}
+/* line 12, stylesheets/sections/_form_function_fresh.scss */
+#form-function-fresh .tabs li {
+    border-right: thin solid black;
+    height: 100%;
+    width: calc(100% / 3);
+}
+    /* line 17, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .tabs li:last-child {
+        border-right: none;
+    }
+    /* line 22, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .tabs li[data-active="true"] button {
+        background: #193030;
+        transition: none;
+    }
+        /* line 26, stylesheets/sections/_form_function_fresh.scss */
+        #form-function-fresh .tabs li[data-active="true"] button span {
+            color: white;
+        }
+/* line 33, stylesheets/sections/_form_function_fresh.scss */
+#form-function-fresh .tabs button {
+    align-items: center;
+    background: white;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    transition: 0.1s;
+    width: 100%;
+}
+    /* line 42, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .tabs button:hover {
+        background: #f1f2f0;
+    }
+
+@media (min-width: 64rem) {
+    /* line 33, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .tabs button {
+        background: #f1f2f0;
+    }
+        /* line 49, stylesheets/sections/_form_function_fresh.scss */
+        #form-function-fresh .tabs button:hover {
+            background: #dde1da;
+        }
+}
+/* line 54, stylesheets/sections/_form_function_fresh.scss */
+#form-function-fresh .tabs button span {
+    color: #193030;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+    /* line 60, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .tabs button span.mobile {
+        font-size: 0.75rem;
+    }
+
+@media (min-width: 64rem) {
+    /* line 60, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .tabs button span.mobile {
+        display: none;
+    }
+}
+/* line 68, stylesheets/sections/_form_function_fresh.scss */
+#form-function-fresh .tabs button span.desktop {
+    display: none;
+    font-size: 1.0625rem;
+}
+
+@media (min-width: 64rem) {
+    /* line 68, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .tabs button span.desktop {
+        display: block;
+    }
+}
+
+@media (min-width: 64rem) {
+    /* line 80, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .pane-section-top {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        width: 100%;
+    }
+}
+/* line 89, stylesheets/sections/_form_function_fresh.scss */
+#form-function-fresh .pane-section-bottom {
+    border-top: thin solid black;
+    display: none;
+}
+
+@media (min-width: 64rem) {
+    /* line 89, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .pane-section-bottom {
+        display: block;
+        height: 31.5625rem;
+        width: 100%;
+    }
+}
+/* line 100, stylesheets/sections/_form_function_fresh.scss */
+#form-function-fresh .cover-photos {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+/* line 106, stylesheets/sections/_form_function_fresh.scss */
+#form-function-fresh .cover-photo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: 0.4s;
+    width: 100%;
+}
+    /* line 118, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .cover-photo[data-active="true"] {
+        opacity: 1;
+    }
+/* line 123, stylesheets/sections/_form_function_fresh.scss */
+#form-function-fresh .small-photos {
+    width: 100%;
+}
+    /* line 126, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .small-photos.mobile {
+        border-bottom: thin solid black;
+        font-size: 0;
+        position: relative;
+        width: 100%;
+    }
+        /* line 132, stylesheets/sections/_form_function_fresh.scss */
+        #form-function-fresh .small-photos.mobile * {
+            font-size: inherit !important;
+        }
+
+@media (min-width: 64rem) {
+    /* line 126, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .small-photos.mobile {
+        display: none;
+    }
+}
+/* line 140, stylesheets/sections/_form_function_fresh.scss */
+#form-function-fresh .small-photos.mobile .small-photo {
+    height: 100%;
+    padding-top: calc(200% / 3);
+}
+
+@media (min-width: 45rem) {
+    /* line 140, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .small-photos.mobile .small-photo {
+        height: 30rem;
+        padding-top: 0;
+    }
+}
+/* line 149, stylesheets/sections/_form_function_fresh.scss */
+#form-function-fresh .small-photos.mobile .small-photo[data-id="function"] {
+    background-size: 185%;
+    background-position: 24% 66%;
+}
+/* line 156, stylesheets/sections/_form_function_fresh.scss */
+#form-function-fresh .small-photos.desktop {
+    display: none;
+}
+
+@media (min-width: 64rem) {
+    /* line 156, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .small-photos.desktop {
+        border-right: thin solid black;
+        display: block;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        height: 100%;
+        position: relative;
+    }
+}
+/* line 168, stylesheets/sections/_form_function_fresh.scss */
+#form-function-fresh .small-photos.desktop ul {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+/* line 176, stylesheets/sections/_form_function_fresh.scss */
+#form-function-fresh .small-photos.desktop .small-photo {
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: 0.4s;
+    width: 100%;
+}
+    /* line 185, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .small-photos.desktop .small-photo[data-id="function"] {
+        background-size: cover;
+        background-position: 40% 50%;
+    }
+    /* line 190, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .small-photos.desktop .small-photo[data-active="true"] {
+        opacity: 1;
+    }
+/* line 197, stylesheets/sections/_form_function_fresh.scss */
+#form-function-fresh .small-photo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+    /* line 203, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .small-photo[data-id="form"] {
+        background-size: 365%;
+        background-position: 26% 51%;
+    }
+/* line 209, stylesheets/sections/_form_function_fresh.scss */
+#form-function-fresh .slick-dots {
+    align-items: center;
+    bottom: 1.25rem;
+    display: flex;
+    justify-content: center;
+    left: 50%;
+    pointer-events: none;
+    position: absolute;
+    transform: translateX(-50%);
+}
+    /* line 219, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .slick-dots li {
+        font-size: 0;
+        height: 0.625rem;
+        margin-right: 1.5625rem;
+        width: 0.625rem;
+    }
+        /* line 225, stylesheets/sections/_form_function_fresh.scss */
+        #form-function-fresh .slick-dots li:last-child {
+            margin-right: 0;
+        }
+        /* line 229, stylesheets/sections/_form_function_fresh.scss */
+        #form-function-fresh .slick-dots li button {
+            background: #f1f2f0;
+            border-radius: 50%;
+            border: thin solid black;
+            color: transparent;
+            display: block;
+            font-size: 0;
+            height: 100%;
+            transition: 0.3s;
+            width: 100%;
+        }
+        /* line 241, stylesheets/sections/_form_function_fresh.scss */
+        #form-function-fresh .slick-dots li.slick-active button {
+            background: #193030;
+        }
+/* line 247, stylesheets/sections/_form_function_fresh.scss */
+#form-function-fresh .info {
+    background: #f1f2f0;
+    padding-bottom: 3.75rem;
+    padding-top: 3.75rem;
+}
+
+@media (min-width: 64rem) {
+    /* line 247, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .info {
+        background: white;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        height: 100%;
+        padding-bottom: 6.25rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-top: 6.25rem;
+    }
+}
+/* line 263, stylesheets/sections/_form_function_fresh.scss */
+#form-function-fresh .info h4 {
+    font-family: "TT Commons", "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1.0625rem;
+    font-weight: bold;
+}
+    /* line 268, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .info h4 span {
+        font-weight: inherit;
+    }
+/* line 274, stylesheets/sections/_form_function_fresh.scss */
+#form-function-fresh .info-icon-title {
+    align-items: center;
+    display: flex;
+}
+
+@media (min-width: 64rem) {
+    /* line 274, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .info-icon-title {
+        flex-direction: column;
+        margin-right: 5rem;
+    }
+}
+/* line 283, stylesheets/sections/_form_function_fresh.scss */
+#form-function-fresh .info-icon-title svg {
+    height: 3.125rem;
+    margin-right: 1.875rem;
+    width: 3.125rem;
+}
+
+@media (min-width: 64rem) {
+    /* line 283, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .info-icon-title svg {
+        height: 8.5rem;
+        margin-right: 0;
+        width: 8.5rem;
+    }
+}
+/* line 294, stylesheets/sections/_form_function_fresh.scss */
+#form-function-fresh .info-icon-title svg path, #form-function-fresh .info-icon-title svg rect, #form-function-fresh .info-icon-title svg circle, #form-function-fresh .info-icon-title svg line, #form-function-fresh .info-icon-title svg polygon, #form-function-fresh .info-icon-title svg polyline {
+    stroke-width: 2px;
+}
+
+@media (min-width: 64rem) {
+    /* line 294, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .info-icon-title svg path, #form-function-fresh .info-icon-title svg rect, #form-function-fresh .info-icon-title svg circle, #form-function-fresh .info-icon-title svg line, #form-function-fresh .info-icon-title svg polygon, #form-function-fresh .info-icon-title svg polyline {
+        stroke-width: 1px;
+    }
+}
+/* line 303, stylesheets/sections/_form_function_fresh.scss */
+#form-function-fresh .info-icon-title h4 {
+    text-transform: uppercase;
+}
+
+@media (min-width: 64rem) {
+    /* line 303, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .info-icon-title h4 {
+        margin-top: 2.25rem;
+        text-transform: none;
+    }
+}
+/* line 311, stylesheets/sections/_form_function_fresh.scss */
+#form-function-fresh .info-icon-title h4 span {
+    display: block;
+}
+    /* line 314, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .info-icon-title h4 span:last-child {
+        margin-top: 0.25em;
+    }
+
+@media (min-width: 64rem) {
+    /* line 314, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .info-icon-title h4 span:last-child {
+        display: none;
+    }
+}
+/* line 325, stylesheets/sections/_form_function_fresh.scss */
+#form-function-fresh .info-items {
+    position: relative;
+}
+/* line 329, stylesheets/sections/_form_function_fresh.scss */
+#form-function-fresh .info-item {
+    height: 100%;
+    left: 50%;
+    max-width: 21.875rem;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    transform: translate(-50%, 10px);
+    transition: 0.2s;
+    width: 100%;
+}
+
+@media (min-width: 64rem) {
+    /* line 329, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .info-item {
+        max-width: 50rem;
+    }
+}
+
+@media (min-width: 64rem) {
+    /* line 345, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .info-item[data-id="function"] .info-icon-title {
+        position: relative;
+        top: -5px;
+    }
+}
+
+@media (min-width: 64rem) {
+    /* line 354, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .info-item[data-id="fresh"] .info-icon-title {
+        position: relative;
+        top: -25px;
+    }
+}
+/* line 362, stylesheets/sections/_form_function_fresh.scss */
+#form-function-fresh .info-item[data-active="true"] {
+    opacity: 1;
+    pointer-events: all;
+    transition: 0.4s 0.3s;
+    transform: translate(-50%, 0);
+}
+
+@media (min-width: 64rem) {
+    /* line 370, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .info-item-content {
+        align-items: center;
+        display: flex;
+    }
+}
+/* line 377, stylesheets/sections/_form_function_fresh.scss */
+#form-function-fresh .info-description {
+    margin-top: 1.875rem;
+}
+
+@media (min-width: 64rem) {
+    /* line 377, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .info-description {
+        margin-top: 0;
+    }
+}
+/* line 384, stylesheets/sections/_form_function_fresh.scss */
+#form-function-fresh .info-description h4 {
+    display: none;
+    text-transform: uppercase;
+}
+
+@media (min-width: 64rem) {
+    /* line 384, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .info-description h4 {
+        display: block;
+        font-size: 1.375rem;
+        margin-bottom: 1em;
+    }
+}
+/* line 395, stylesheets/sections/_form_function_fresh.scss */
+#form-function-fresh .info-description .body-text {
+    font-size: 1.0625rem;
+}
+
+@media (min-width: 64rem) {
+    /* line 395, stylesheets/sections/_form_function_fresh.scss */
+    #form-function-fresh .info-description .body-text {
+        font-size: 1.1875rem;
+    }
+}
+
+/* PBH 8/3/2020  BACKGROUND COLOR CHANGING ON SCROLL STYLING*/
+/* panel styles */
+.panel {
+    /* min height incase content is higher than window height */
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    /* outline: 10px solid hotpink; */
+    /* turn above on to see the edge of panels */
+}
+
+/* colours */
+.color-violet {
+    background-color: #7A4EAB;
+}
+
+.color-indigo {
+    background-color: #4332CF;
+}
+
+.color-blue {
+    background-color: #2F8FED;
+}
+
+.color-green {
+    background-color: #4DCF42;
+}
+
+.color-yellow {
+    background-color: #FAEB33;
+}
+
+.color-orange {
+    background-color: #F19031;
+}
+
+.color-red {
+    background-color: #F2293A;
+}
+/* PBH 8/3/2020 END BACKGROUND COLOR CHANGING ON SCROLL STYLING*/
+
+/* TABS STYLING */
+
+nav > .nav.nav-tabs {
+    border: none;
+    color: #fff;
+    background: none;    
+    border-radius: 0;
+}
+
+nav > div a.nav-item.nav-link,
+nav > div a.nav-item.nav-link.active {
+    border: none;
+    padding: 40px;
+    color: #fff;
+    background: var(--primary-2);
+    border-radius: 0;
+}
+
+    nav > div a.nav-item.nav-link.active:after {
+        content: "";
+        position: relative;
+        
+        border: 15px solid transparent;
+        border-top-color: none;
+    }
+
+.tab-content {
+    background: #fdfdfd;
+    line-height: 25px;
+    border: 1px solid #ddd;
+    border-top: 5px solid #482683;
+    border-bottom: 5px solid #482683;
+    
+}
+
+nav > div a.nav-item.nav-link:hover,
+nav > div a.nav-item.nav-link:focus {
+    border: none;
+    background: var(--primary-1);
+    color: #fff;
+    border-radius: 0;
+    transition: background 0.40s linear;
+}
+

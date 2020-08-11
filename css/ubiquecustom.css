@@ -1,0 +1,48 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+
+#logo a.standard-logo {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#logo a.retina-logo {
+  display: none;
+}
+
+@media (min-width: 992px) {
+
+  .full-header #logo {
+    
+  }
+
+  #header.transparent-header.full-header #logo {
+    border-right-color: rgba(0,0,0,0.1);
+  }
+
+  .sticky-header-shrink #header-wrap #logo img {
+    height: 60px;
+  }
+}
+
+
+/* ----------------------------------------------------------------
+	Retina Logo
+-----------------------------------------------------------------*/
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and ( min--moz-device-pixel-ratio: 2), only screen and ( -o-min-device-pixel-ratio: 2/1), only screen and ( min-device-pixel-ratio: 2), only screen and ( min-resolution: 192dpi), only screen and ( min-resolution: 2dppx) {
+
+  #logo a.standard-logo {
+    display: none;
+  }
+
+  #logo a.retina-logo {
+    display: -ms-flexbox;
+    display: flex;
+  }
+}

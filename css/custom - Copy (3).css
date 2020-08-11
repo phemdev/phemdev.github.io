@@ -1,0 +1,292 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+
+  /* START HERO GRID DEFINE */
+
+  /* Small devices (landscape phones, 576px and up) and Medium devices (tablets, 768px and up) */
+  @media (max-width: 576px) {
+    
+    .ubique-wrapper {
+      display: flex;
+      flex-wrap: wrap;      
+    }
+
+    .ubique-hero-video-item {
+      color: #000;
+      max-height: 50vh;
+      flex-basis: 135%;
+      float: left;
+      margin-left: -35%;
+      object-fit: contain;
+      overflow: hidden;
+      background-color: aquamarine;
+    }
+
+    .ubique-hero-text-item {
+      color: #FFF;
+      flex-grow: 1;
+      height: 50vh;
+      background-color: rgba(72, 38, 131,1);
+      align-items: center;
+    }
+  }
+
+
+  /* Large devices (desktops, 992px and up) and Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+
+    .ubique-wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+
+    .ubique-hero-video-item {
+      color: #000;
+      
+      max-height: 100vh;
+      width: 100vw;
+      float: left;
+      margin-left: -15%;
+      object-fit: contain;
+      overflow: hidden;
+      background-color: aquamarine;
+    }
+
+    .ubique-hero-text-item {
+      color: #FFF;
+      background-color: rgba(72, 38, 131,1);
+      width: 50vw;
+      overflow: hidden;
+      
+    }
+
+    .ubique-video {
+      width: calc(100vh * (16/9));
+    }
+
+    #ubiqueherotable {
+      height: 90vh;
+      position:center;
+      
+      
+    }
+  }
+
+  /* END HERO GRID */
+
+  #container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #one {
+    width: 50vw;
+    padding: 0px;
+    float: left;
+    overflow: hidden;
+  }
+
+  #two {
+    width: 40vw;
+    padding: 0px;
+    float: right;
+    overflow: hidden;
+  }
+
+
+  @media only screen and (max-width: 767px) {
+    #one {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 100vw;
+      height: 100vh;
+      padding: 0px;
+      z-index: 3;
+    }
+  }
+
+
+  @media only screen and (max-width: 767px) {
+    #container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 100vw;
+      height: 100vh;
+      padding: 0px;
+      z-index: 3;
+    }
+  }
+
+
+  @media only screen and (max-width: 767px) {
+    #two {
+      opacity: 0;
+    }
+  }
+
+
+  audio, canvas, iframe, img, svg, video {
+    vertical-align: top;
+    align-items: top;
+  }
+
+    audio:not([controls]) {
+      display: none;
+      height: 0
+    }
+
+
+
+  /* FONT SIZEZ BY DEVICE SIZE */
+
+  @media (max-width:699px) {
+    html {
+      font-size: 15px
+    }
+  }
+
+  @media (min-width:700px) and (max-width:999px) {
+    html {
+      font-size: 12px
+    }
+  }
+
+  @media (min-width:1000px) and (max-width:1199px) {
+    html {
+      font-size: 14px
+    }
+  }
+
+  @media (min-width:1200px) and (max-width:1599px) {
+    html {
+      font-size: 16px
+    }
+  }
+
+  @media (min-width:1600px) and (max-width:1999px) {
+    html {
+      font-size: 18px
+    }
+  }
+
+  @media (min-width:2000px) and (max-width:2399px) {
+    html {
+      font-size: 20px
+    }
+  }
+
+  @media (min-width:2400px) {
+    html {
+      font-size: 22px
+    }
+  }
+
+
+/* BRAND COLORS */
+:root {
+  font-size: 100%;
+  --primary-1: hsla(262, 55%, 33%, 100%);
+  --primary-2: hsla(262, 44%, 44%, 95%);
+  --primary-3: hsla(262, 33%, 55%, 90%);
+  --primary-4: hsla(262, 25%, 70%, 80%);
+  --workforce-1: hsla(125, 50%, 25%, 100%);
+  --workforce-2: hsla(125, 60%, 40%, 95%);
+  --workforce-3: hsla(125, 70%, 60%, 90%);
+  --workforce-4: hsla(125, 60%, 80%, 80%);
+  --tech-3: hsla(55, 75%, 60%, 90%);
+  --insight-1: hsla(220, 100%, 15%, 1);
+  --dark-1: hsla(0, 0%, 7%, 100%);
+  --dark-2: hsla(0, 0%, 20%, 100%);
+  --dark-3: hsla(0, 0%, 46%, 100%);
+  --dark-4: hsla(0, 0%, 60%, 100%);
+  --light-1: hsl(255, 100%, 100%);
+  --light-2: hsl(255, 80%, 100%);
+  --light-3: hsl(255, 60%, 100%);
+  --light-4: hsl(255, 40%, 100%);
+}
+
+.dark-4 {
+  color: var(--dark-4);
+}
+
+.dark-1 {
+  color: var(--dark-1);
+}
+
+.primary-3 {
+  color: var(--primary-3);
+}
+
+.primary-4 {
+  color: var(--primary-4);
+}
+
+.primary-1 {
+  color: var(--primary-1);
+}
+
+.workforce-1 {
+  color: var(--workforce-1);
+}
+
+.workforce-2 {
+  color: var(--workforce-2);
+}
+
+.tech-3 {
+  color: var(--tech-3);
+}
+
+.insight-1 {
+  color: var(--insight-1);
+}
+
+.light-4 {
+  color: var(--light-4);
+}
+
+.ubqique-bg-color {
+  background-color: #482683 !important;
+}
+
+/* PBH 8/2/2020 The ::selection selector matches the portion of an element that is selected by a user.
+Only a few CSS properties can be applied to the ::selection selector: color, background, cursor, and outline.*/
+::-moz-selection { /* Code for Firefox */
+  color: #FFF;
+  background: #482683;
+}
+
+::selection {
+  color: #FFF;
+  background: #482683;
+}
+
+.highlightme {
+  color: #FFF;
+  background: #482683;
+}
+
+.redhighlightme {
+  color: #FFFFFF;
+  background: red;
+}
+
+
+/* ----------------------------------------------------------------
+	Text Size Utility Classes
+-----------------------------------------------------------------*/
+.text-white {
+  color: #FFF !important;
+}
+
+.text-ubique {
+  color: #482683 !important;
+}
+

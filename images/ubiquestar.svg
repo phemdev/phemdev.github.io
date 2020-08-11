@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.0//EN' 'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg fill-opacity="1" xmlns:xlink="http://www.w3.org/1999/xlink" color-rendering="auto" color-interpolation="auto" text-rendering="auto" stroke="black" stroke-linecap="square" stroke-miterlimit="10" shape-rendering="auto" stroke-opacity="1" fill="black" stroke-dasharray="none" font-weight="normal" stroke-width="1" xmlns="http://www.w3.org/2000/svg" font-family="&apos;Dialog&apos;" font-style="normal" stroke-linejoin="miter" font-size="12" stroke-dashoffset="0" image-rendering="auto">
+  <!--Unicode Character 'WHITE FOUR POINTED STAR' (U+2727)-->
+  <defs id="genericDefs" />
+  <g>
+    <g>
+      <path d="M108.2812 178.7344 L120.375 178.7344 Q126.8438 220.3594 155.7422 246.5859 Q184.6406 272.8125 217.9688 276.4688 L217.9688 288.2812 Q184.7812 291.6562 155.7422 318.1641 Q126.7031 344.6719 120.375 385.875 L108.2812 385.875 Q101.9531 344.25 72.9844 318.0234 Q44.0156 291.7969 10.9688 288.2812 L10.9688 276.4688 Q44.8594 272.5312 73.4766 246.0938 Q102.0938 219.6562 108.2812 178.7344 ZM114.3281 180.8438 Q106.7344 223.7344 78.2578 250.1016 Q49.7812 276.4688 12.6562 282.2344 Q51.1875 288.7031 78.8906 314.7891 Q106.5938 340.875 114.3281 383.9062 Q122.3438 340.7344 150.1875 314.7188 Q178.0312 288.7031 216 282.2344 Q180.1406 277.0312 151.5234 251.1562 Q122.9062 225.2812 114.3281 180.8438 Z" stroke="none" />
+    </g>
+  </g>
+</svg>
